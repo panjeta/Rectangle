@@ -31,7 +31,24 @@ namespace SENG8040_ASSIGNMENT_TEST
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void GetWidth_Input30_Returns30()
+        {
 
+            //Arrange
+            int length = 10;
+            int width = 30;
+
+            int expectedResult = width;
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.GetWidth();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
 
     }
 }
